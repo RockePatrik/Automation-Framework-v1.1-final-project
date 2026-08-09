@@ -1,4 +1,4 @@
-# Framework de automatización para Magento
+# Framework de automatización con Magento
 
 Este es un proyecto de automatización web creado para el curso de Selenium.
 
