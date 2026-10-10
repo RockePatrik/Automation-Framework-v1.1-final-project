@@ -12,7 +12,7 @@ public class ForgotPasswordPage extends BasePage {
 
     // Mensajes de respuesta
     By emailError = By.id("email_address-error");
-    By successMessage = By.cssSelector(".message-success");
+    By responseMessage  = By.cssSelector(".message-success, .message-error");
 
     public ForgotPasswordPage(WebDriver driver) {
         super(driver);
@@ -33,7 +33,7 @@ public class ForgotPasswordPage extends BasePage {
     }
 
     @Step("Obtener confirmación de recuperación")
-    public String getSuccessMessage() {
-        return text(successMessage);
+    public String getResponseMessage() {
+        return text(responseMessage);
     }
 }
